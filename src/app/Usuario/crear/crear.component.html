@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Crear Usuarios</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label for="">Nombres:</label>
+                            <input [(ngModel)]="usuario.nombres" name="nombres" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label for="">Apellidos:</label>
+                            <input [(ngModel)]="usuario.apellidos" name="apellidos" type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label for="">Cédula:</label>
+                            <input [(ngModel)]="usuario.cedula" name="cedula" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label for="">Correo:</label>
+                            <input [(ngModel)]="usuario.correo" name="correo" type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label for="">Teléfono:</label>
+                            <input [(ngModel)]="usuario.telefono" name="telefono" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <button (click)="Guardar(usuario)" class="btn btn-success">Guardar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
